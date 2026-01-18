@@ -19,6 +19,7 @@ print("""
 4. Escaneo De Systema operativo y puertos Rapido, Y escanea servicios activos de los puertos. Multi escaneo T4 O SV *         Recuerda que El hacking etico y la legalidad lo es todo.
 5. Ping para ver si existe tal ip,                                                            Ping, Existencia de IP*
 6. Visualizador de TODAS las carpetas de tu pc, Usa dir, solo en windows.                                           *
+7. Escaneo de vulnerabilidades.     NMAP                                                                            *
 0. Exit.                                                                                                            *
 99. Info sobre creacion de ESCANERS SYSTEM                                                                          *
 ----------------------------------------------------------------------------------------------------------------------
@@ -56,6 +57,11 @@ while True:
         time.sleep(4)
         print("Gracias por esperar :D")
         os.system(f"cls")
+    
+    elif opcion == "7":
+        ip7 = input("Ingresa ip a escanear vulnerabilidades: ")
+        os.system(f"nmap -T4 -script=vuln {ip7}")
+
     
     elif opcion == "99":
         print("""
